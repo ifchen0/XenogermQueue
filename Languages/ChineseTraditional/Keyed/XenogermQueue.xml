@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XQ_AddToQueue>加入佇列</XQ_AddToQueue>
+  <XQ_AddToQueueDesc>把這個異種細胞加入組裝機的佇列，而不是取代目前的工作。佇列中的項目會像工作台帳單一樣依序自動開始。</XQ_AddToQueueDesc>
+  <XQ_QueueGizmo>異種細胞佇列（{0}）</XQ_QueueGizmo>
+  <XQ_QueueGizmoDesc>檢視並編輯這台組裝機要自動製作的異種細胞佇列。</XQ_QueueGizmoDesc>
+  <XQ_InspectQueue>佇列中的異種細胞：{0}</XQ_InspectQueue>
+  <XQ_Paused>已暫停</XQ_Paused>
+  <XQ_WindowTitle>異種細胞佇列</XQ_WindowTitle>
+  <XQ_Pause>暫停佇列</XQ_Pause>
+  <XQ_Resume>繼續佇列</XQ_Resume>
+  <XQ_PausedHint>佇列已暫停，恢復前不會開始新的異種細胞。</XQ_PausedHint>
+  <XQ_Empty>佇列是空的。請在重組視窗中按「加入佇列」。</XQ_Empty>
+  <XQ_ModeCount>製造 X 次</XQ_ModeCount>
+  <XQ_ModeUntilHave>製造直到有 X 個</XQ_ModeUntilHave>
+  <XQ_ModeForever>永遠重複</XQ_ModeForever>
+  <XQ_TimesLeft>剩 {0} 次</XQ_TimesLeft>
+  <XQ_StatusMissing>基因包遺失</XQ_StatusMissing>
+  <XQ_StatusRunning>製作中（{0}）</XQ_StatusRunning>
+  <XQ_StatusSatisfied>已達目標數量</XQ_StatusSatisfied>
+  <XQ_StatusHeld>已達目標數量，暫停於 {0}</XQ_StatusHeld>
+  <XQ_HeldTargetReached>已達佇列目標數量</XQ_HeldTargetReached>
+  <XQ_StatusSaved>已跳過，進度保留</XQ_StatusSaved>
+  <XQ_Skip>跳過</XQ_Skip>
+  <XQ_SkipDesc>先擱置這個異種細胞，開始佇列中的下一筆。進度會保留，下次輪到時繼續。已放入的古神膠囊會掉在組裝機旁。</XQ_SkipDesc>
+  <XQ_SkipNoNext>目前沒有其他可以開始的佇列項目。</XQ_SkipNoNext>
+  <XQ_DeleteRunningDesc>從佇列移除。正在製作的異種細胞不會被取消。</XQ_DeleteRunningDesc>
+  <XQ_MissingGenepacks>異種細胞佇列：略過 {0}，部分基因包已不在連接的基因庫中。</XQ_MissingGenepacks>
+  <XQ_QueuePaused>目前的異種細胞已被取消，異種細胞佇列已暫停。</XQ_QueuePaused>
+</LanguageData>

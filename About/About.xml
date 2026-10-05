@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Xenogerm Queue</name>
+  <author>ifchen0</author>
+  <packageId>ifchen0.xenogermqueue</packageId>
+  <url>https://github.com/ifchen0/XenogermQueue</url>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <description>Adds a bill-style production queue to the Biotech gene assembler.
+
+Vanilla only lets the gene assembler work on one xenogerm at a time, and you have to open the recombine window again after every xenogerm. This mod adds an "Add to queue" button to the recombine window. Queued xenogerms start automatically one after another, the same way workbench bills do.
+
+Each queue entry has a repeat mode:
+- Do X times
+- Do until you have X (counts xenogerms with the same name on the map)
+- Do forever
+
+Use the "Xenogerm queue" button on the assembler to reorder entries, change modes and counts, remove entries, or pause the queue.
+
+Skipping keeps progress:
+The xenogerm in progress can be skipped to start the next entry. Its progress is kept and continues when it comes up again. Inserted archite capsules are dropped next to the assembler and hauled back later. Progress is also kept when you replace a queued xenogerm with the vanilla "Start recombining" button. A "do until you have X" entry that reaches its target mid-work steps aside the same way.
+
+If you cancel a queued xenogerm with the vanilla cancel button, its progress is lost as in vanilla and the queue pauses so it does not restart right away. Entries whose genepacks are no longer in a connected gene bank are skipped.
+
+Notes:
+- Requires Biotech.
+- Safe to add to or remove from an existing save.
+- Load after Harmony.
+
+This mod was developed with the help of AI coding tools (Claude Code). Full source code is included in the Source folder for review.</description>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>ludeon.rimworld.biotech</li>
+  </loadAfter>
+</ModMetaData>

@@ -1,0 +1,34 @@
+Adds a bill-style production queue to the Biotech gene assembler.
+
+[h2]What it does[/h2]In vanilla, the gene assembler works on one xenogerm at a time, and you have to open the recombine window again after every xenogerm. This mod adds an [b]Add to queue[/b] button to the recombine window. Queued xenogerms start automatically one after another, the same way workbench bills do.
+
+Each queue entry has a repeat mode:
+[list]
+[*][b]Do X times[/b]
+[*][b]Do until you have X[/b]: counts xenogerms with the same name on the map
+[*][b]Do forever[/b]
+[/list]
+Use the [b]Xenogerm queue[/b] button on the assembler to reorder entries, change modes and counts, remove entries, or pause the queue. Hover an entry's name to see its genes.
+
+[h2]Skipping keeps progress[/h2]The xenogerm in progress can be skipped to start the next entry. Its progress is saved on the entry and continues when it comes up again. Genepacks are never consumed, and inserted archite capsules are dropped next to the assembler and hauled back when the entry resumes.
+
+Progress is also kept when:
+[list]
+[*]you replace a queued xenogerm with the vanilla [i]Start recombining[/i] button. The queue resumes after your manual xenogerm is done.
+[*]a [i]Do until you have X[/i] entry reaches its target partway through. It steps aside for the next entry, or waits with its progress if nothing else can run.
+[/list]
+
+[h2]Cancelling and missing genepacks[/h2][list]
+[*]Cancelling a queued xenogerm with the vanilla cancel button loses its progress as in vanilla, and the queue pauses so it does not restart right away. Press [i]Resume queue[/i] to continue.
+[*]Cancelling a manual (non-queued) xenogerm does not pause the queue.
+[*]Entries whose genepacks are no longer in a connected gene bank are skipped, with a one-time message.
+[/list]
+
+[h2]Notes[/h2][list]
+[*]Requires Biotech.
+[*]Safe to add to or remove from an existing save. Removing it only drops the queue; the xenogerm in progress continues as normal.
+[*]Load after Harmony.
+[*]English and Traditional Chinese translations included.
+[/list]
+[hr][/hr]
+This mod was developed with the help of AI coding tools (Claude Code). Full source code is included in the Source folder and on [url=https://github.com/ifchen0/XenogermQueue]GitHub[/url] for review.

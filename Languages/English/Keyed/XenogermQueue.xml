@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XQ_AddToQueue>Add to queue</XQ_AddToQueue>
+  <XQ_AddToQueueDesc>Add this xenogerm to the assembler's queue instead of replacing the current job. Queued xenogerms start automatically one after another, like workbench bills.</XQ_AddToQueueDesc>
+  <XQ_QueueGizmo>Xenogerm queue ({0})</XQ_QueueGizmo>
+  <XQ_QueueGizmoDesc>View and edit the queue of xenogerms this assembler will create automatically.</XQ_QueueGizmoDesc>
+  <XQ_InspectQueue>Queued xenogerms: {0}</XQ_InspectQueue>
+  <XQ_Paused>paused</XQ_Paused>
+  <XQ_WindowTitle>Xenogerm queue</XQ_WindowTitle>
+  <XQ_Pause>Pause queue</XQ_Pause>
+  <XQ_Resume>Resume queue</XQ_Resume>
+  <XQ_PausedHint>Queue is paused. No new xenogerm will be started until it is resumed.</XQ_PausedHint>
+  <XQ_Empty>The queue is empty. Use "Add to queue" in the recombine window.</XQ_Empty>
+  <XQ_ModeCount>Do X times</XQ_ModeCount>
+  <XQ_ModeUntilHave>Do until you have X</XQ_ModeUntilHave>
+  <XQ_ModeForever>Do forever</XQ_ModeForever>
+  <XQ_TimesLeft>{0} left</XQ_TimesLeft>
+  <XQ_StatusMissing>Genepacks missing</XQ_StatusMissing>
+  <XQ_StatusRunning>In progress ({0})</XQ_StatusRunning>
+  <XQ_StatusSatisfied>Target reached</XQ_StatusSatisfied>
+  <XQ_StatusHeld>Target reached, held at {0}</XQ_StatusHeld>
+  <XQ_HeldTargetReached>Queue target count reached</XQ_HeldTargetReached>
+  <XQ_StatusSaved>Skipped, progress kept</XQ_StatusSaved>
+  <XQ_Skip>Skip</XQ_Skip>
+  <XQ_SkipDesc>Set this xenogerm aside and start the next entry in the queue. Its progress is kept and continues when it comes up again. Inserted archite capsules are dropped next to the assembler.</XQ_SkipDesc>
+  <XQ_SkipNoNext>No other queue entry can be started right now.</XQ_SkipNoNext>
+  <XQ_DeleteRunningDesc>Remove from queue. The xenogerm in progress is not cancelled.</XQ_DeleteRunningDesc>
+  <XQ_MissingGenepacks>Xenogerm queue: skipping {0}, some genepacks are no longer in a connected gene bank.</XQ_MissingGenepacks>
+  <XQ_QueuePaused>Xenogerm queue paused because the current xenogerm was cancelled.</XQ_QueuePaused>
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="GeneAssembler"]/comps</xpath>
+    <value>
+      <li>
+        <compClass>XenogermQueue.CompXenogermQueue</compClass>
+      </li>
+    </value>
+  </Operation>
+</Patch>
