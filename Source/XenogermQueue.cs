@@ -395,13 +395,26 @@ namespace XenogermQueue
 
         private static readonly Vector2 ButSize = new Vector2(150f, 38f);
 
-        public static void Postfix(Dialog_CreateXenogerm __instance, Rect rect)
+        private const float ButGap = 6f;
+
+        /// <summary>
+        /// Narrow the button row so vanilla draws "Start recombining" and the duration label one button further
+        /// left, leaving the far right free for "Add to queue" without overlapping the label.
+        /// </summary>
+        public static void Prefix(Dialog_CreateXenogerm __instance, ref Rect rect, out Rect __state)
+        {
+            __state = rect;
+            if (geneAssembler(__instance)?.GetComp<CompXenogermQueue>() != null)
+                rect.width -= ButSize.x + ButGap;
+        }
+
+        public static void Postfix(Dialog_CreateXenogerm __instance, Rect __state)
         {
             Building_GeneAssembler assembler = geneAssembler(__instance);
             CompXenogermQueue comp = assembler?.GetComp<CompXenogermQueue>();
             if (comp == null)
                 return;
-            Rect butRect = new Rect(rect.x + ButSize.x + 10f, rect.y, ButSize.x, ButSize.y);
+            Rect butRect = new Rect(__state.xMax - ButSize.x, __state.y, ButSize.x, ButSize.y);
             TooltipHandler.TipRegion(butRect, "XQ_AddToQueueDesc".Translate());
             if (!Widgets.ButtonText(butRect, "XQ_AddToQueue".Translate()) || !(bool)canAccept.Invoke(__instance, null))
                 return;
