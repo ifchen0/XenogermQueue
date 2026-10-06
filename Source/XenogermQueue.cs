@@ -13,6 +13,7 @@ namespace XenogermQueue
     public static class Startup
     {
         public static readonly Texture2D QueueIcon = ContentFinder<Texture2D>.Get("UI/Gizmos/RecombineGenes");
+        public static readonly Texture2D QueueBadge = ContentFinder<Texture2D>.Get("UI/XenogermQueueBadge");
 
         static Startup()
         {
@@ -255,9 +256,9 @@ namespace XenogermQueue
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            yield return new Command_Action
+            yield return new Command_XenogermQueue
             {
-                defaultLabel = "XQ_QueueGizmo".Translate(entries.Count),
+                defaultLabel = "XQ_QueueGizmo".Translate(),
                 defaultDesc = "XQ_QueueGizmoDesc".Translate(),
                 icon = Startup.QueueIcon,
                 action = () => Find.WindowStack.Add(new Dialog_XenogermQueue(this)),
@@ -287,6 +288,25 @@ namespace XenogermQueue
                     entries = new List<XenogermQueueEntry>();
                 current = currentIndex >= 0 && currentIndex < entries.Count ? entries[currentIndex] : null;
             }
+        }
+    }
+
+    /// <summary>
+    /// The vanilla recombine icon with a list badge in the bottom-right corner, so it is not mistaken for "Recombine".
+    /// </summary>
+    public class Command_XenogermQueue : Command_Action
+    {
+        private const float BadgeSize = 0.42f;
+
+        public override void DrawIcon(Rect rect, Material buttonMat, GizmoRenderParms parms)
+        {
+            base.DrawIcon(rect, buttonMat, parms);
+            float size = rect.width * BadgeSize;
+            Rect badge = new Rect(rect.xMax - size - 3f, rect.yMax - size - 3f, size, size);
+            if (parms.lowLight)
+                GUI.color = Color.white.ToTransparent(0.6f);
+            GUI.DrawTexture(badge, Startup.QueueBadge);
+            GUI.color = Color.white;
         }
     }
 

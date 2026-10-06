@@ -2,7 +2,7 @@
 <LanguageData>
   <XQ_AddToQueue>Add to queue</XQ_AddToQueue>
   <XQ_AddToQueueDesc>Add this xenogerm to the assembler's queue instead of replacing the current job. Queued xenogerms start automatically one after another, like workbench bills.</XQ_AddToQueueDesc>
-  <XQ_QueueGizmo>Xenogerm queue ({0})</XQ_QueueGizmo>
+  <XQ_QueueGizmo>Xenogerm queue</XQ_QueueGizmo>
   <XQ_QueueGizmoDesc>View and edit the queue of xenogerms this assembler will create automatically.</XQ_QueueGizmoDesc>
   <XQ_InspectQueue>Queued xenogerms: {0}</XQ_InspectQueue>
   <XQ_Paused>paused</XQ_Paused>

@@ -2,7 +2,7 @@
 <LanguageData>
   <XQ_AddToQueue>加入佇列</XQ_AddToQueue>
   <XQ_AddToQueueDesc>把這個異種細胞加入組裝機的佇列，而不是取代目前的工作。佇列中的項目會像工作台帳單一樣依序自動開始。</XQ_AddToQueueDesc>
-  <XQ_QueueGizmo>異種細胞佇列（{0}）</XQ_QueueGizmo>
+  <XQ_QueueGizmo>異種細胞佇列</XQ_QueueGizmo>
   <XQ_QueueGizmoDesc>檢視並編輯這台組裝機要自動製作的異種細胞佇列。</XQ_QueueGizmoDesc>
   <XQ_InspectQueue>佇列中的異種細胞：{0}</XQ_InspectQueue>
   <XQ_Paused>已暫停</XQ_Paused>
