@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Xenogerm Queue</name>
+  <name>[DEPRECATED] Xenogerm Queue</name>
   <author>ifchen0</author>
   <packageId>ifchen0.xenogermqueue</packageId>
   <url>https://github.com/ifchen0/XenogermQueue</url>
   <supportedVersions><li>1.6</li></supportedVersions>
-  <description>Adds a bill-style production queue to the Biotech gene assembler.
+  <description>Deprecated: this mod is now part of Vanilla Tune-Up: Fixes &amp; Tweaks and will not be updated further. Please switch to that mod.
+
+Adds a bill-style production queue to the Biotech gene assembler.
 
 Vanilla only lets the gene assembler work on one xenogerm at a time, and you have to open the recombine window again after every xenogerm. This mod adds an "Add to queue" button to the recombine window. Queued xenogerms start automatically one after another, the same way workbench bills do.
 
