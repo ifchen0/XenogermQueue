@@ -1,3 +1,5 @@
+[h2]Now part of Vanilla Tune-Up[/h2]This mod has been merged into [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3815774199]Vanilla Tune-Up: Fixes & Tweaks[/url] as the [b]Xenogerm queue[/b] tweak, and will not be updated further. You can switch at any time: while this mod is active, that part of Vanilla Tune-Up is skipped, so nothing is applied twice. Saved queues carry over. Start the game once with both mods active and this tweak stays on after you remove this mod; otherwise turn it on in Vanilla Tune-Up's mod settings.
+[hr][/hr]
 Adds a bill-style production queue to the Biotech gene assembler.
 
 [h2]What it does[/h2]In vanilla, the gene assembler works on one xenogerm at a time, and you have to open the recombine window again after every xenogerm. This mod adds an [b]Add to queue[/b] button to the recombine window. Queued xenogerms start automatically one after another, the same way workbench bills do.
